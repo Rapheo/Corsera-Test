@@ -1,9 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment Solution for Module 2</title>
 </head>
+<style>
+	*{
+		-moz-box-sizing: border-box; 
+		-webkit-box-sizing: border-box; 
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		font-family: Comic Sans MS;
+	}
+	.row{
+		width: 100;
+	}
+	h1{
+		text-align: center;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	div#container {
+		position: relative;
+		top: 60px;
+		content: -5px;
+		margin: 5px;
+	}
+	.pt{
+		position: absolute;
+		border:1px solid black;
+		font-size: 125%;
+		right: 0px;
+		padding: 1px 15px 1px 15px;
+	}
+	.pwritten{
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 35px 15px 5px 15px;
+	}
+
+	/********** Desktop devices only **********/
+	@media (min-width: 992px) {
+		.col-lg-4 {
+			float: left;
+			border: 1px solid black;
+			background-color: gray;
+			margin: auto;
+		}
+		.col-lg-4 {
+			width: calc(33.33% - 10px);
+		}
+	}
+
+	/********** Tablet devices only **********/
+	@media (min-width: 768px) and (max-width: 991px) {
+		.col-md-3, .col-md-12 {
+			float: left;
+			border: 1px solid black;
+			background-color: gray;
+		}
+
+		.col-md-3 {
+			width: calc(50% - 10px);
+		}
+
+		.col-md-12 {
+			width: calc(100% - 10px);
+		}
+	}
+
+	/********** Mobile devices only **********/
+	@media (max-width: 767px) {
+		.col-sd-12 {
+			float: left;
+			border: 1px solid black;
+			background-color: gray;
+		}
+
+		.col-sd-12 {
+			width: calc(100% - 10px);
+		}
+	}
+
+</style>
 <body>
-	<h1>hello</h1>
-</body>
-</html>
+	<h1 style="font-size: 175%">Our Menu</h1>
+	<div>
+		<div id="container" class="col-lg-4 col-md-3 col-sd-12 "><p class="pt" style="background-color: #e75480; text-align: center">Chicken</p>
+			<p class="pwritten">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p></div>
+			<div id="container" class="col-lg-4 col-md-3 col-sd-12 "><p class="pt" style="background-color: red; text-align: center; color:white">Beef</p>
+				<p class="pwritten">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p></div>
+				<div id="container" class="col-lg-4 col-md-12 col-sd-12 "><p class="pt" style="background-color: #FF7F50; text-align: center">Sushi</p>
+					<p class="pwritten">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p></div>
+				</div>
+			</body>
+			</html>
